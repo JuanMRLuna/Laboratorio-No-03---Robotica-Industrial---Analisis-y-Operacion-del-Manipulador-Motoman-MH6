@@ -1,1 +1,1 @@
-# Laboratorio-No.-03---Rob-tica-Industrial---An-lisis-y-Operaci-n-del-Manipulador-Motoman-MH6.
+# Laboratorio No.03 Robóica Industrial - Análisis y Operación del Manipulador Motoman MH6.
