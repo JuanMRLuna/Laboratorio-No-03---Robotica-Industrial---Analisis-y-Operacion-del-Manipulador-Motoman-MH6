@@ -68,7 +68,7 @@ Como se mencionó anteriormente, el laboratorio cuenta además con la guía line
 | | |
 | :--- | :--- |
 | **Carga máxima** | 1000 kg |
-| **Desplazamiento** | 1.2 rad/s |
+| **Desplazamiento** | 3000 mm |
 | **Velocidad máxima**| 0.72 m/s |
 | **Repetibilidad** | ± 0.05 mm |
 
@@ -77,7 +77,7 @@ Adiconalmente tambien se tiene el posicionador rotacional con estas caracteristi
 | | |
 | :--- | :--- |
 | **Rango de movimiento** |360°|
-| **Velocidad máxima** | 3000 mm |
+| **Velocidad máxima** | 1.2 rad/s |
 | **Carga axial máxima**| 2500 N |
 | **Carga radial máxima** | 1500 N|
 
