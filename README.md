@@ -1,6 +1,6 @@
 # Laboratorio No.03 Robóica Industrial - Análisis y Operación del Manipulador Motoman MH6.
 
-INTEGRANTES:
+# INTEGRANTES:
 
 * Juan Manuel Rojas Luna
 * Miguel Ángel Ortiz Mejía
