@@ -1,5 +1,11 @@
 # Laboratorio No.03 Robóica Industrial - Análisis y Operación del Manipulador Motoman MH6.
 
+INTEGRANTES:
+
+* Juan Manuel Rojas Luna
+* Miguel Ángel Ortiz Mejía
+* Dixon Allberto Cuesta Segura
+
 ## Introducción.
 
 El presente laboratorio tiene como propósito comparar las características técnicas de los manipuladores industriales como el Motoman MH6 de Yaskawa y el ABB IRB140, comprender y aplicar las configuraciones iniciales del Motoman MH6 (home1 y home2), explorar sus modos de operación manual (por articulaciones y cartesiano), y ajustar los niveles de velocidad para su manipulación segura. Además, se utilizará el software RoboDK para diseñar, simular y ejecutar una trayectoria en coordenadas polares, permitiendo observar la integración entre la programación offline y la operación física del robot. Este ejercicio busca fortalecer las competencias en el uso de herramientas digitales para programación de robots, así como la comprensión práctica de los fundamentos de control y operación de manipuladores industriales en entornos reales.
