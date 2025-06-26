@@ -18,7 +18,7 @@ En la automatización industrial, el uso de manipuladores robóticos como el Mot
 
 *  Detallar los niveles de velocidad disponibles para el movimiento manual del Motoman MH6, explicando cómo se realiza el cambio entre niveles y cómo se visualiza la velocidad seleccionada en la interfaz del controlador.
   
-*Describir las principales funciones del software RoboDK, su utilidad para programar y mover manipuladores industriales, y su forma de comunicación con el robot físico.
+*   Describir las principales funciones del software RoboDK, su utilidad para programar y mover manipuladores industriales, y su forma de comunicación con el robot físico.
 
 * Diseñar, simular y ejecutar una trayectoria polar en el entorno virtual de RoboDK y realizar su implementación física con el manipulador Motoman MH6.
 
