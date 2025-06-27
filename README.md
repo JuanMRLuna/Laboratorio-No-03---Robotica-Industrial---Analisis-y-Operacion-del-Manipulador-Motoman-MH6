@@ -339,7 +339,7 @@ Se adjuntan los videos correspondientes a cada una de las trayectorias desarroll
 
 #### Cardioide.
 
-[Video_Cardioide](https://youtu.be/Ap_82T5ErD8)
+[Video_Cardioide](https://youtu.be/sA8mHKQvbHA)
 
 # **Referencias**
 
