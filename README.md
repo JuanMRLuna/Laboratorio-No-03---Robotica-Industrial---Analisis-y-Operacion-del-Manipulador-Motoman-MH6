@@ -172,3 +172,4 @@ Para ello desarollamos dos sub rutinas diferentes una compuesta de cardiodes y o
 
     # **Referencias**
     * García Carrero, J. (2017). Planeación de trayectorias en vuelo de un manipulador industrial para el Laboratorio Fábrica Experimental UN.
+    * ABB (2003), *IRB 140 Industrial Robot - Datasheet*. ABB Robotics
