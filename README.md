@@ -158,7 +158,15 @@ La velocidad en modo manual se ajusta para garantizar la seguridad del operario 
 Para ello desarollamos dos sub rutinas diferentes una compuesta de cardiodes y otra de flores polares 
 
 * **Paso 1: Definir la Trayectoria Polar en RoboDK (Scripting)**
-     Explicacion y muestra d elas trayectorias.....
+  * *Primera trayectoria* Se dibuja una rosa polar (curva matemática con `r = B - A * sin(k * θ)`) y luego se dibujan las iniciales del grupo (J, M y D) con segmentos rectos y algunos arcos definidos con `MoveC`, en simulación todo fluye correctamente. en RoboDK; se conecta al robot virtual, se define un frame y herramienta, se configura a una velocidad de (300 mm/s) y bleanding (`setRounding(5)`).
+
+  Se trazan: la **rosa polar** con ~720 puntos: todos con `MoveL`, comando que tambien se utiliza 
+  *  
+
+
+
+
+     
 * **Paso 2: Ejecución Virtual en RoboDK**
     * Una vez que el script ha generado el programa con la secuencia de movimientos, ejecuta el programa en la simulación de RoboDK.
     * Verificamos  visualmente que la trayectoria sea correcta, que el robot no exceda los límites de sus ejes y que no haya colisiones.
