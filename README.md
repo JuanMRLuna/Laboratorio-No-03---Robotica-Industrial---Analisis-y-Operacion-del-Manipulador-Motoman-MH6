@@ -303,15 +303,40 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
 
 
 * **Paso 1: Definir la Trayectoria Polar en RoboDK (Scripting)**
-  * *Primera trayectoria* Se dibuja una rosa polar (curva matemática con `r = B - A * sin(k * θ)`) y luego se dibujan las iniciales del grupo (J, M y D) con segmentos rectos y algunos arcos definidos con `MoveC`, en simulación todo fluye correctamente. en RoboDK; se conecta al robot virtual, se define un frame y herramienta, se configura a una velocidad de (300 mm/s) y bleanding (`setRounding(5)`).
+  * *Primera trayectoria*: Se genera una figura compuesta por una **rosa polar** —una curva matemática definida por la ecuación `r = B - A·sin(k·θ)`— seguida por las letras **J**, **M** y **D**, que representan las iniciales del grupo.
 
-  Se trazan: la **rosa polar** con ~720 puntos: todos con `MoveL`, comando que tambien se utiliza 
-  *  
+    En la simulación con **RoboDK**, la trayectoria se ejecuta correctamente:
+    
+    - Se conecta al robot virtual.
+    - Se define un *frame* de trabajo y una herramienta activa.
+    - Se configura una velocidad de **300 mm/s** y un *blending* suave con `setRounding(5)`.
+    
+    La trayectoria consta de:
+    
+    - **Rosa polar:** aproximada mediante **720 puntos**, todos trazados con `MoveL` para formar una curva suave.
+    - **Letra J:** trazada mayormente con `MoveL` y un arco final generado con `MoveC`.
+    - **Letra M:** compuesta enteramente con movimientos lineales `MoveL`.
+    - **Letra D:** combina segmentos rectos con `MoveL` y una porción curva trazada con `MoveC`.
 
+  *  *Segunda trayectoria*:
+ 
+      Este script genera un patrón de **cardioides concéntricas** dentro de un círculo delimitador, seguido por el dibujo de las letras **J**, **M** y **D**.
+  
+    Cada cardioide se basa en la ecuación polar:
 
+    `r = a(1 + cos(θ))`
 
+    Donde `a` varía entre las curvas para formar múltiples cardioides desde el centro hacia afuera.  
+El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos los puntos del patrón.
 
-     
+    - Se conecta al robot virtual desde RoboDK.
+    - Se define un *frame* de trabajo llamado `"Frame_from_Target1"`.
+    - Se configura una velocidad de **200 mm/s** y un *blending* con `setRounding(3)`.
+    - Se dibujan:
+      - **5 cardioides**, cada una con 360 puntos trazados con `MoveL`, desplazadas por un offset configurable (`offset_x`, `offset_y`).
+    - Un **círculo contenedor** compuesto por 72 puntos para delimitar visualmente la zona de trabajo.
+    - Las iniciales **J**, **M**, **D**: combinan movimientos lineales (`MoveL`) y curvos (`MoveC`) para representar las letras.
+ 
 * **Paso 2: Ejecución Virtual en RoboDK**
     * Una vez que el script ha generado el programa con la secuencia de movimientos, ejecuta el programa en la simulación de RoboDK.
     * Verificamos  visualmente que la trayectoria sea correcta, que el robot no exceda los límites de sus ejes y que no haya colisiones.
