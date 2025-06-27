@@ -95,6 +95,47 @@ Adiconalmente tambien se tiene el posicionador rotacional con estas caracteristi
 | **Montaje** | *Suelo, Pared, Techo* | *Suelo, Invertido, Pared* |
 | **Protección (IP)** | IP54/67 | *IP67* |
 
+### Tipos de montaje:
+
+El manipulador Motoman MH6 puede instalarse en tres configuraciones físicas diferentes:
+
+ 1. Montaje en el suelo (Floor-mounted)
+- Configuración estándar.
+- El robot se fija directamente al suelo.
+- No requiere ajustes especiales.
+
+ 2. Montaje en la pared (Wall-mounted)
+- El robot se fija verticalmente sobre una pared.
+- Requiere limitar el rango del eje S a ±30°.
+- Se deben usar tornillos M16 con resistencia ≥1200 N/mm².
+- Torque de apriete recomendado: 206 N·m.
+
+ 3. Montaje en el techo (Ceiling-mounted)
+- El robot se instala colgado e invertido desde el techo.
+- Requiere medidas de seguridad adicionales para evitar caídas.
+
+ El ABB IRB140 permite múltiples ángulos de instalación gracias a la parametrización por gravedad (Gravity Alpha y Beta).
+
+## Inclinación sobre el eje Y (Gravity Beta)
+| Posición | Descripción                   | Ángulo |
+|----------|-------------------------------|--------|
+| 1        | Montaje en suelo              | 0°     |
+| 2        | Inclinación hacia atrás       | 45°    |
+| 3        | Montaje en pared vertical     | 90°    |
+| 4        | Montaje suspendido (techo)    | 180°   |
+
+## Inclinación sobre el eje X (Gravity Alpha)
+| Posición | Descripción                   | Ángulo | Valor Alpha     |
+|----------|-------------------------------|--------|------------------|
+| 1        | Montaje en suelo              | 0°     | 0                |
+| 2        | Inclinación 45° lateral       | 45°    | 0.785398         |
+| 3        | Montaje en pared izquierda    | 90°    | 1.570796         |
+| 4        | Montaje en pared derecha      | -90°   | -1.570796        |
+
+Para montaje a 180°, se recomienda usar **Gravity Beta** en lugar de Gravity Alpha.
+
+
+
 ### **2. Posiciones "Home" del Motoman MH6**
 
 La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posiciones de referencia predefinidas que cumplen diferentes propósitos para el operario y el sistema.
