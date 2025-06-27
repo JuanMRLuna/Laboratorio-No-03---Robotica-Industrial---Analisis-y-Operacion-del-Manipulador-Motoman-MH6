@@ -85,14 +85,13 @@ Adiconalmente tambien se tiene el posicionador rotacional con estas caracteristi
 
 | Característica Técnica | Motoman MH6 | ABB IRB 140 |
 | :--- | :--- | :--- |
-| **Carga Máxima (Payload)** | *6 kg* | *5 kg* |
+| **Carga Máxima (Payload)** | *6 kg* | *6 kg* |
 | **Alcance vertical** | *2486 mm* | *810 mm* |
 | **Alcance horizontal** | 1422 mm | *810 mm* |
 | **Número de Ejes** | *8* | *6* |
 | **Repetibilidad** | *± 0.08 mm* | *± 0.03 mm* |
 | **Peso del Robot** | 130 kg | *98 kg* |
-| **Controlador** | *DX 100* | *S4Cplus* |
-| **Montaje** | *Suelo, Pared, Techo* | *Suelo, Invertido, Pared* |
+| **Controlador** | *DX 100* | *IRC5* |
 | **Protección (IP)** | IP54/67 | *IP67* |
 
 ### Tipos de montaje:
