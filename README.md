@@ -94,8 +94,6 @@ Adiconalmente tambien se tiene el posicionador rotacional con estas caracteristi
 | **Montaje** | *Suelo, Pared, Techo* | *Suelo, Invertido, Pared* |
 | **Protección (IP)** | IP54/67 | *IP67* |
 
-*(Nota: Rellenar la tabla con las especificaciones técnicas verificadas de las hojas de datos de cada fabricante.)*
-
 ### **2. Posiciones "Home" del Motoman MH6**
 
 La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posiciones de referencia predefinidas que cumplen diferentes propósitos para el operario y el sistema.
