@@ -356,7 +356,7 @@ El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos l
 > [!IMPORTANT]
 > El comando `MoveC` **no funciona en modo streaming** (tiempo real) con el robot Motoman MH6 debido a las **limitaciones del driver de RoboDK**.  
 > Para que los movimientos circulares se ejecuten correctamente, se debe **generar un programa `.JBI` offline** y cargarlo directamente al controlador del robot.
-
+> Fuente: [RoboDK Forum – MoveC does not work in real Motoman](https://robodk.com/forum/Thread-MoveC-does-not-work-in-real-Motoman)
 
 
 Se adjuntan los archivos .rdk correspondientes a cada una de las trayectorias desarrolladas.
