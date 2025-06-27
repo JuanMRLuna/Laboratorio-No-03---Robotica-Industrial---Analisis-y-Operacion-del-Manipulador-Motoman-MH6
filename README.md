@@ -317,6 +317,9 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
     - **Letra J:** trazada mayormente con `MoveL` y un arco final generado con `MoveC`.
     - **Letra M:** compuesta enteramente con movimientos lineales `MoveL`.
     - **Letra D:** combina segmentos rectos con `MoveL` y una porción curva trazada con `MoveC`.
+   
+      ![Cardioide](img/Rosa.jpg)
+ 
 
   *  *Segunda trayectoria*:
  
@@ -337,6 +340,9 @@ El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos l
     - Un **círculo contenedor** compuesto por 72 puntos para delimitar visualmente la zona de trabajo.
     - Las iniciales **J**, **M**, **D**: combinan movimientos lineales (`MoveL`) y curvos (`MoveC`) para representar las letras.
  
+      ![RosaDoble](img/Cardioide.jpg)
+
+ 
 * **Paso 2: Ejecución Virtual en RoboDK**
     * Una vez que el script ha generado el programa con la secuencia de movimientos, ejecuta el programa en la simulación de RoboDK.
     * Verificamos  visualmente que la trayectoria sea correcta, que el robot no exceda los límites de sus ejes y que no haya colisiones.
@@ -351,9 +357,7 @@ El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos l
 > El comando `MoveC` **no funciona en modo streaming** (tiempo real) con el robot Motoman MH6 debido a las **limitaciones del driver de RoboDK**.  
 > Para que los movimientos circulares se ejecuten correctamente, se debe **generar un programa `.JBI` offline** y cargarlo directamente al controlador del robot.
 
- ![Cardioide](img/Rosa.jpg)
- 
-![RosaDoble](img/Cardioide.jpg)
+
 
 Se adjuntan los archivos .rdk correspondientes a cada una de las trayectorias desarrolladas.
 
