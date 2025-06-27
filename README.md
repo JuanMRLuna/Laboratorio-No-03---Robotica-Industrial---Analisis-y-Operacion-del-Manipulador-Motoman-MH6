@@ -119,7 +119,7 @@ El manipulador Motoman MH6 puede instalarse en tres configuraciones físicas dif
 
  El ABB IRB140 permite múltiples ángulos de instalación gracias a la parametrización por gravedad (Gravity Alpha y Beta).
 
-## Inclinación sobre el eje Y (Gravity Beta)
+### Inclinación sobre el eje Y (Gravity Beta)
 | Posición | Descripción                   | Ángulo |
 |----------|-------------------------------|--------|
 | 1        | Montaje en suelo              | 0°     |
@@ -127,7 +127,7 @@ El manipulador Motoman MH6 puede instalarse en tres configuraciones físicas dif
 | 3        | Montaje en pared vertical     | 90°    |
 | 4        | Montaje suspendido (techo)    | 180°   |
 
-## Inclinación sobre el eje X (Gravity Alpha)
+### Inclinación sobre el eje X (Gravity Alpha)
 | Posición | Descripción                   | Ángulo | Valor Alpha     |
 |----------|-------------------------------|--------|------------------|
 | 1        | Montaje en suelo              | 0°     | 0                |
@@ -138,18 +138,46 @@ El manipulador Motoman MH6 puede instalarse en tres configuraciones físicas dif
 Para montaje a 180°, se recomienda usar **Gravity Beta** en lugar de Gravity Alpha.
 
 
-
 ### **2. Posiciones "Home" del Motoman MH6**
 
 La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posiciones de referencia predefinidas que cumplen diferentes propósitos para el operario y el sistema.
 
 * **Home1 (Posición de Referencia Principal):**
-    * **Descripción:** Generalmente, es la posición "cero" del robot, donde todos los ejes están en su marca de cero grados. Es una posición conocida y calibrada de fábrica.
-    * **Uso:** Se utiliza como punto de partida absoluto para la calibración, el mantenimiento y como una referencia segura y predecible a la que el robot puede volver. Es fundamental para la precisión absoluta del robot.
+    * **Descripción:** Esta posición es utilizada como referencia general para arranque del sistema, es la posición "cero" del robot. Es una posición conocida y calibrada de fábrica.
+ 
+
+| Eje | Nombre                         | Ángulo Teach Pendant (°)| Ángulo aproximado (°) |
+|-----|--------------------------------|-------------------------|------------------------|
+| S   | Base (Shoulder)                | 0.0000                  | 0°                     |
+| L   | Brazo inferior (Lower arm)     | 88.6629                 | 90°                    |
+| U   | Brazo superior (Upper arm)     | -81.0787                | -80°                   |
+| R   | Muñeca rotacional              | -0.0017                 | 0°                     |
+| B   | Muñeca de flexión              | 51.7618                 | 52°                    |
+| T   | Muñeca final                   | -3.2709                 | -3°                    |
+
+![HOME1](img/home1.jpg)    
+ 
+* **Uso:** Se utiliza como punto de partida absoluto para la calibración, el mantenimiento y como una referencia segura y predecible a la que el robot puede volver.  
+      
 
 * **Home2 (Posición de Referencia Secundaria o de Usuario):**
-    * **Descripción:** Es una posición "Home" definida por el usuario. No es necesariamente la posición cero de los ejes, sino una ubicación conveniente y segura dentro del espacio de trabajo.
-    * **Uso:** Se suele configurar como un punto de partida para una tarea específica, una posición de espera segura entre ciclos, o un punto intermedio para evitar colisiones antes de iniciar una trayectoria compleja. Ofrece flexibilidad para optimizar los ciclos de trabajo.
+  
+    * **Descripción:** Es una posición "Home" definida por el usuario. Es la posición cero de los ejes, que es una ubicación conveniente y segura dentro del espacio de trabajo.
+ 
+  
+| Eje | Nombre                         | Ángulo Teach Pendant (°) | Ángulo aproximado (°)  |
+|-----|--------------------------------|--------------------------|------------------------|
+| S   | Base (Shoulder)                | 0.0000                   | 0°                     |
+| L   | Brazo inferior (Lower arm)     | -1.5665                  | 0°                     |
+| U   | Brazo superior (Upper arm)     | 1.7135                   | 0°                     |
+| R   | Muñeca rotacional              | 0.0000                   | 0°                     |
+| B   | Muñeca de flexión              | -0.1468                  | 0°                     |
+| T   | Muñeca final                   | -3.2709                  | 0°                     |
+
+![HOME2](img/home2.jpg)   
+
+* **Uso:** Se suele configurar como un punto de partida para una tarea específica, una posición de espera segura entre ciclos, o un punto intermedio para evitar colisiones antes de iniciar una trayectoria compleja. Ofrece flexibilidad para optimizar los ciclos de trabajo.
+
 
 
 
