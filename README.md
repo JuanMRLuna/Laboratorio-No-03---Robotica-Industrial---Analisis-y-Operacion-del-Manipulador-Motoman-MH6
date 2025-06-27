@@ -4,7 +4,7 @@
 
 * Juan Manuel Rojas Luna
 * Miguel Ángel Ortiz Mejía
-* Dixon Allberto Cuesta Segura
+* Dixon Alberto Cuesta Segura
 
 ## Introducción.
 
