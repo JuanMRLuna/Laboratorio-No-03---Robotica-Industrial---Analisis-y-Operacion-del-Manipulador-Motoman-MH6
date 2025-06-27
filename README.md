@@ -242,19 +242,16 @@ Utiliza los botones del Teach Pendant para seleccionar el eje que deseas mover. 
 | `+S / -S`  | Articulación S positivo y negativo     |
 | `+L / -L`  | Articulación L positivo y negativo     |
 | `+U / -U`  | Articulación U positivo y negativo     |
-| `+R / -R ` | Articulación S positivo y negativo     |
-| `+B  / -B `| Articulación S positivo y negativo     |
-| `+T  / -T `| Articulación S positivo y negativo     |
+| `+R / -R ` | Articulación R positivo y negativo     |
+| `+B  / -B `| Articulación B positivo y negativo     |
+| `+T  / -T `| Articulación T positivo y negativo     |
 
 Para habilitar el control conjunto del robot Motoman MH6 con un posicionador rotacional y una guía lineal TSL1000, es necesario configurar ambos dispositivos como ejes externos (external axes) dentro del sistema del controlador DX100. La guía lineal se integra como el séptimo eje, permitiendo el desplazamiento lineal del robot sobre una trayectoria recta de hasta tres metros, mientras que el posicionador rotacional se configura como el octavo eje, permitiendo la rotación precisa de piezas durante operaciones como soldadura o ensamblaje. Estos ejes pueden ser seleccionados manualmente desde el Teach Pendant utilizando los botones E+ y E-, y controlados con los mismos comandos de movimiento que los ejes principales del robot. Su configuración requiere definir parámetros como el tipo de eje, límites de movimiento, velocidad máxima, y relación con el sistema de coordenadas del robot, garantizando así una operación sincronizada y segura durante tareas automatizadas.
 
 ![FP](img/FPendant.png)
 
 
-
-
 ### **4. Niveles y Configuración de Velocidad Manual**
-
 
 La velocidad en modo manual se ajusta para garantizar la seguridad del operario y la precisión del posicionamiento.
 
@@ -264,12 +261,14 @@ La velocidad en modo manual se ajusta para garantizar la seguridad del operario 
         * **Media (Medium):** ~50%
         * **Alta (High):** hasta 100% de la velocidad manual permitida (que es inferior a la velocidad máxima en modo automático).
 
-
-
 ### **5. Aplicaciones y Comunicación de RoboDK**
 
+RoboDK es una plataforma de simulación y programación offline para robots industriales, que permite diseñar, simular y controlar trayectorias sin necesidad de programar directamente en el controlador físico.
+
 * **Aplicaciones Principales de RoboDK:**
+  
     * **Simulación y Programación Fuera de Línea (Offline Programming - OLP):** Permite crear, simular y depurar programas de robot en un PC sin detener la producción.
+    * **Simulación 3D de trayectorias:** Permite crear rutas complejas y visualizar cómo se moverá el robot en un entorno virtual antes de ejecutar el programa en el mundo real.
     * **Calibración de Robots:** Mejora la precisión del robot comparando el modelo virtual con el real.
     * **Conversión de Programas:** Convierte programas de un controlador de robot a otro.
     * **Mecanizado con Robots (CAM):** Genera trayectorias de robot a partir de modelos CAD/CAM para tareas como fresado, corte o impresión 3D.
@@ -299,7 +298,10 @@ La velocidad en modo manual se ajusta para garantizar la seguridad del operario 
 
 ### **7. Programación de Trayectoria Polar en RoboDK**
 
-Para ello desarollamos dos sub rutinas diferentes una compuesta de cardiodes y otra de flores polares 
+El grupo desarrolló dos scripts en RoboDK programados en lenguaje Python, cada uno correspondiente a una trayectoria polar diferente diseñada para ser ejecutada por el robot Motoman MH6. Ambos programas integran, en el lado izquierdo de la trayectoria, la firma gráfica de las iniciales J, M, D, dispuestas en sentido vertical (de arriba hacia abajo), representando a los integrantes del equipo.
+
+La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa polar, generando un patrón geométrico complejo y estéticamente balanceado. La segunda trayectoria corresponde a un conjunto de cardioides de diferentes dimensiones, dispuestos de forma concéntrica o secuencial, todos contenidos dentro de una circunferencia principal.
+
 
 * **Paso 1: Definir la Trayectoria Polar en RoboDK (Scripting)**
   * *Primera trayectoria* Se dibuja una rosa polar (curva matemática con `r = B - A * sin(k * θ)`) y luego se dibujan las iniciales del grupo (J, M y D) con segmentos rectos y algunos arcos definidos con `MoveC`, en simulación todo fluye correctamente. en RoboDK; se conecta al robot virtual, se define un frame y herramienta, se configura a una velocidad de (300 mm/s) y bleanding (`setRounding(5)`).
