@@ -388,3 +388,4 @@ Se adjuntan los videos correspondientes a cada una de las trayectorias desarroll
 
 * García Carrero, J. (2017). Planeación de trayectorias en vuelo de un manipulador industrial para el Laboratorio Fábrica Experimental UN.
 * ABB (2003), *IRB 140 Industrial Robot - Datasheet*. ABB Robotics
+* RoboDK Forum. (s.f.). *MoveC does not work in real Motoman*. Recuperado de [https://robodk.com/forum/Thread-MoveC-does-not-work-in-real-Motoman](https://robodk.com/forum/Thread-MoveC-does-not-work-in-real-Motoman)
