@@ -37,8 +37,7 @@ En la automatización industrial, el uso de manipuladores robóticos como el Mot
 
 ### Descripcion premilinar del robot:
 ![Ejes](/img/yaskawa.jpg)
-Para el desarrollo de esta laboratorio se  tiene  disponible  un sistema robótico compuesto por  el robot Yaskawa Motoman MH6, incluyendo dos ejes externos: guía lineal y posicionador
-rotacional.En  este caso unicamente se uso el robot Yaskawa Motoman MH6.
+Para el desarrollo de esta laboratorio se  tiene  disponible  un sistema robótico compuesto por  el robot Yaskawa Motoman MH6, incluyendo dos ejes externos: guía lineal y posicionadorrotacional. En  este caso unicamente se uso el robot Yaskawa Motoman MH6.
 La siguiente tabla muestra las especificaciones del robot Motoman, según lo documentado por García Carrero (2017).
 
 ![Ejes](/img/ejes.png)
