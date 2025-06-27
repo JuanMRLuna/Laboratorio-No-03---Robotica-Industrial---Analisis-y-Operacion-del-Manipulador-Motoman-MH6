@@ -145,6 +145,8 @@ La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posicion
 * **Home1 (Posición de Referencia Principal):**
     * **Descripción:** Esta posición es utilizada como referencia general para arranque del sistema, es la posición "cero" del robot. Es una posición conocida y calibrada de fábrica.
  
+[!HomeG1](img/Home11.jpeg)
+ 
 
 | Eje | Nombre                         | Ángulo Teach Pendant (°)| Ángulo aproximado (°) |
 |-----|--------------------------------|-------------------------|------------------------|
@@ -163,7 +165,8 @@ La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posicion
 * **Home2 (Posición de Referencia Secundaria o de Usuario):**
   
     * **Descripción:** Es una posición "Home" definida por el usuario. Es la posición cero de los ejes, que es una ubicación conveniente y segura dentro del espacio de trabajo.
- 
+
+[!HomeG2](img/Home22.jpeg)
   
 | Eje | Nombre                         | Ángulo Teach Pendant (°) | Ángulo aproximado (°)  |
 |-----|--------------------------------|--------------------------|------------------------|
