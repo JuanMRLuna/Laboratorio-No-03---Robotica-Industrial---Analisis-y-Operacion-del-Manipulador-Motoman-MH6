@@ -366,6 +366,11 @@ Se adjuntan los archivos .rdk correspondientes a cada una de las trayectorias de
 
 Se adjuntan los videos correspondientes a cada una de las trayectorias desarrolladas. En cada video se puede observar de forma comparativa el movimiento simulado en RoboDK y la ejecución real del robot físico Motoman MH6.
 
+> [!IMPORTANT]
+> El comando `MoveC` **no funciona en modo streaming** (tiempo real) con el robot Motoman MH6 debido a las **limitaciones del driver de RoboDK**.  
+> Para que los movimientos circulares se ejecuten correctamente, se debe **generar un programa `.JBI` offline** y cargarlo directamente al controlador del robot.
+
+
 #### Rosa dentro de otra rosa.
 
 [Video_Rosa_Doble](https://youtu.be/4MjX-Fkn7r8)
