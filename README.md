@@ -319,7 +319,7 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
 
 * **Paso 3: Ejecución Física en el Motoman MH6 (Comandado desde PC)**
     1.  **Establecer Comunicación:** Hacemos ping para asegurar  de que el PC con RoboDK y el controlador del Motoman estén en la misma red Ethernet.
-    2. **Configuramos el Controlador en modo romoto:**Se gira la llave del techbendadn  y ya se garantiza que podemos empezar aejecutar la rutina 
+    2. **Configuramos el Controlador en modo romoto:**Se gira la llave del Teach Pendant  y ya se garantiza que podemos empezar aejecutar la rutina 
 
     4.  **Monitoreo:** RoboDK enviará los puntos de la trayectoria uno por uno al controlador del robot. El robot físico se moverá siguiendo la trayectoria simulada, mientras la simulación en RoboDK refleja el movimiento real del robot. Es crucial supervisar este proceso con el pulsador de emergencia ("E-Stop") a mano.
 
@@ -333,6 +333,13 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
 
 Se adjuntan los videos correspondientes a cada una de las trayectorias desarrolladas. En cada video se puede observar de forma comparativa el movimiento simulado en RoboDK y la ejecución real del robot físico Motoman MH6.
 
+#### Rosa dentro de otra rosa.
+
+[Video_Rosa_Doble](https://youtu.be/4MjX-Fkn7r8)
+
+#### Cardioide.
+
+[Video_Cardioide](https://youtu.be/Ap_82T5ErD8)
 
 # **Referencias**
 
