@@ -349,9 +349,8 @@ El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos l
 
 * **Paso 3: Ejecución Física en el Motoman MH6 (Comandado desde PC)**
     1.  **Establecer Comunicación:** Hacemos ping para asegurar  de que el PC con RoboDK y el controlador del Motoman estén en la misma red Ethernet.
-    2. **Configuramos el Controlador en modo romoto:**Se gira la llave del Teach Pendant  y ya se garantiza que podemos empezar aejecutar la rutina 
-
-    4.  **Monitoreo:** RoboDK enviará los puntos de la trayectoria uno por uno al controlador del robot. El robot físico se moverá siguiendo la trayectoria simulada, mientras la simulación en RoboDK refleja el movimiento real del robot. Es crucial supervisar este proceso con el pulsador de emergencia ("E-Stop") a mano.
+    2. **Configuramos el Controlador en modo romoto:**Giramos la llave del Teach Pendant para activar el modo remoto, lo que permite iniciar la ejecución de la rutina programada. 
+    3.  **Monitoreo:** RoboDK enviará los puntos de la trayectoria uno por uno al controlador del robot. El robot físico se moverá siguiendo la trayectoria simulada, mientras la simulación en RoboDK refleja el movimiento real del robot. Es crucial supervisar este proceso con el pulsador de emergencia ("E-Stop") a mano.
 
 > [!IMPORTANT]
 > El comando `MoveC` **no funciona en modo streaming** (tiempo real) con el robot Motoman MH6 debido a las **limitaciones del driver de RoboDK**.  
@@ -361,13 +360,9 @@ El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos l
 
 Se adjuntan los archivos .rdk correspondientes a cada una de las trayectorias desarrolladas.
 
-#### Rosa dentro de otra rosa.
+#### [🔗 Rosa dentro de otra rosa](img/Robodk_Lab_3.rdk)
 
-![Rosa_Doble](img/Robodk_Lab_3.rdk)
-
-#### Cardioide.
-
-![CCardioide](img/RobodkBasico-2.rdk)
+#### [🔗 Cardioide](img/RobodkBasico-2.rdk)
 
 ### 8. Videos.
 
