@@ -41,9 +41,6 @@ En la automatización industrial, el uso de manipuladores robóticos como el Mot
 Para el desarrollo de esta laboratorio se  tiene  disponible  un sistema robótico compuesto por el robot Yaskawa Motoman MH6, incluyendo dos ejes externos: guía lineal y posicionador rotacional. En este caso unicamente se uso el robot Yaskawa Motoman MH6.
 La siguiente tabla muestra las especificaciones del robot Motoman, según lo documentado por García Carrero (2017).
 
-### Cuadro comparativo detallado de las características técnicas del Motoman MH6 y el IRB140, incluyendo carga
-máxima, alcance, número de grados de libertad, velocidad, aplicaciones típicas, etc.
-
 ![Ejes](/img/ejes.png)
 
 | Característica | Detalle / Eje | Valor |
@@ -138,7 +135,7 @@ El manipulador Motoman MH6 puede instalarse en tres configuraciones físicas dif
 Para montaje a 180°, se recomienda usar **Gravity Beta** en lugar de Gravity Alpha.
 
 
-### **2. Posiciones "Home" del Motoman MH6**
+## **2. Posiciones "Home" del Motoman MH6**
 
 La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posiciones de referencia predefinidas que cumplen diferentes propósitos para el operario y el sistema.
 
@@ -182,9 +179,81 @@ La distinción entre `Home1` y `Home2` en un robot Motoman se refiere a posicion
 * **Uso:** Se suele configurar como un punto de partida para una tarea específica, una posición de espera segura entre ciclos, o un punto intermedio para evitar colisiones antes de iniciar una trayectoria compleja. Ofrece flexibilidad para optimizar los ciclos de trabajo.
 
 
+**¿Cuál posición es mejor?**
+
+Desde el punto de vista operativo, Home2 es la posición más adecuada para la ejecución de procesos productivos. Esta configuración,  presenta ángulos articulares cercanos a cero, lo que posiciona al robot en una postura más extensa y alineada con el área de trabajo. Al estar más cerca del punto inicial de las trayectorias programadas reduce tiempos de desplazamiento. En cambio, Home1, aunque es la posición de fábrica, se utiliza principalmente para tareas de calibración, mantenimiento o reinicio seguro del sistema. 
+
+### **3. Procedimiento detallado para ejecutar movimientos manuales, incluyendo el cambio entre los modos de operación (articulado y cartesiano), así como la realización de traslaciones y rotaciones en los ejes X, Y y Z**
+
+Este procedimiento describe cómo operar manualmente el robot Motoman MH6 utilizando el Teach Pendant, permitiendo movimientos por articulaciones y en modo cartesiano, así como ajustes de velocidad y selección de ejes.
+
+1. Encendido del robot
+
+- Enciende el robot desde el panel de control.
+- Asegúrate de que esté en **modo Teach**.
+
+2.  Selección del modo de movimiento
+
+El robot puede operarse manualmente en dos modos principales:
+
+### Modo por articulaciones (Joint)
+
+- Permite mover **una articulación a la vez**.
+- Cada eje (S, L, U, R, B, T) se controla de forma independiente.
+
+###  Modo cartesiano (XYZ)
+
+- Permite mover el **Tool Center Point (TCP)** en el espacio tridimensional.
+- Admite **traslaciones** en los ejes X, Y, Z y **rotaciones** sobre los ejes Rx, Ry, Rz.
 
 
-### **3. Niveles y Configuración de Velocidad Manual**
+3. Cambio entre modos de operación
+
+- Pulsa el botón `COORD` en el Teach Pendant.
+- Selecciona el sistema de coordenadas deseado:
+
+| Modo     | Descripción                                  |
+|----------|----------------------------------------------|
+| `JOINT`  | Movimiento por articulaciones                |
+| `WORLD`  | Coordenadas globales (referencia del robot)  |
+| `TOOL`   | Coordenadas relativas al efector final (TCP) |
+| `USER`   | Sistema definido por el usuario              |
+
+
+4. Selección del eje o dirección de movimiento
+
+Utiliza los botones del Teach Pendant para seleccionar el eje que deseas mover. Las direcciones pueden ser **positivas (+)** o **negativas (-)**.
+
+**Movimiento Cartesiano**
+
+| Movimiento | Acción                           |
+|------------|----------------------------------|
+| `+X / -X`  | Traslación adelante / atrás      |
+| `+Y / -Y`  | Traslación lateral derecha / izq |
+| `+Z / -Z`  | Movimiento vertical arriba / abajo |
+| `+Rx / -Rx`| Rotación sobre eje X             |
+| `+Ry / -Ry`| Rotación sobre eje Y             |
+| `+Rz / -Rz`| Rotación sobre eje Z             |
+
+**Movimiento articular**
+
+| Movimiento | Acción                                 |
+|------------|----------------------------------------|
+| `+S / -S`  | Articulación S positivo y negativo     |
+| `+L / -L`  | Articulación L positivo y negativo     |
+| `+U / -U`  | Articulación U positivo y negativo     |
+| `+R / -R ` | Articulación S positivo y negativo     |
+| `+B  / -B `| Articulación S positivo y negativo     |
+| `+T  / -T `| Articulación S positivo y negativo     |
+
+Para habilitar el control conjunto del robot Motoman MH6 con un posicionador rotacional y una guía lineal TSL1000, es necesario configurar ambos dispositivos como ejes externos (external axes) dentro del sistema del controlador DX100. La guía lineal se integra como el séptimo eje, permitiendo el desplazamiento lineal del robot sobre una trayectoria recta de hasta tres metros, mientras que el posicionador rotacional se configura como el octavo eje, permitiendo la rotación precisa de piezas durante operaciones como soldadura o ensamblaje. Estos ejes pueden ser seleccionados manualmente desde el Teach Pendant utilizando los botones E+ y E-, y controlados con los mismos comandos de movimiento que los ejes principales del robot. Su configuración requiere definir parámetros como el tipo de eje, límites de movimiento, velocidad máxima, y relación con el sistema de coordenadas del robot, garantizando así una operación sincronizada y segura durante tareas automatizadas.
+
+![FP](img/FPendant.png)
+
+
+
+
+### **4. Niveles y Configuración de Velocidad Manual**
 
 
 La velocidad en modo manual se ajusta para garantizar la seguridad del operario y la precisión del posicionamiento.
