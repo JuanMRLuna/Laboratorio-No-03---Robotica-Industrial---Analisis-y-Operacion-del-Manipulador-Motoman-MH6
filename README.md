@@ -328,6 +328,15 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
  
 ![RosaDoble](img/Cardioide.jpg)
 
+Se adjuntan los archivos .rdk correspondientes a cada una de las trayectorias desarrolladas.
+
+#### Rosa dentro de otra rosa.
+
+![Rosa_Doble](img/Robodk_Lab_3.rdk)
+
+#### Cardioide.
+
+![CCardioide](img/RobodkBasico-2.rdk)
 
 ### 8. Videos.
 
