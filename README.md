@@ -84,15 +84,15 @@ Adiconalmente tambien se tiene el posicionador rotacional con estas caracteristi
 
 | Característica Técnica | Motoman MH6 | ABB IRB 140 |
 | :--- | :--- | :--- |
-| **Carga Máxima (Payload)** | *6 kg* | *Ej: 6 kg* |
-| **Alcance vertical** | *2486 mm* | *Ej: 810 mm* |
-| **Alcance horizontal** | 1422 mm | *Ej: 810 mm* |
-| **Número de Ejes** | 8 | *Ej: 6* |
-| **Repetibilidad** | ± 0.08 mm | *Ej: ± 0.03 mm* |
-| **Peso del Robot** | 130 kg | *Ej: 98 kg* |
-| **Controlador** | *DX 100* | *Ej: IRC5* |
-| **Montaje** | *Ej: Suelo, Pared, Techo* | *Ej: Suelo, Invertido, Pared* |
-| **Protección (IP)** | IP54/67 | *Ej: IP67* |
+| **Carga Máxima (Payload)** | *6 kg* | *5 kg* |
+| **Alcance vertical** | *2486 mm* | *810 mm* |
+| **Alcance horizontal** | 1422 mm | *810 mm* |
+| **Número de Ejes** | *8* | *6* |
+| **Repetibilidad** | *± 0.08 mm* | *± 0.03 mm* |
+| **Peso del Robot** | 130 kg | *98 kg* |
+| **Controlador** | *DX 100* | *S4Cplus* |
+| **Montaje** | *Suelo, Pared, Techo* | *Suelo, Invertido, Pared* |
+| **Protección (IP)** | IP54/67 | *IP67* |
 
 *(Nota: Rellenar la tabla con las especificaciones técnicas verificadas de las hojas de datos de cada fabricante.)*
 
