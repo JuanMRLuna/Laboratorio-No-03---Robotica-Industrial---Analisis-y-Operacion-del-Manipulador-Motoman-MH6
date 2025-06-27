@@ -323,6 +323,18 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
 
     4.  **Monitoreo:** RoboDK enviará los puntos de la trayectoria uno por uno al controlador del robot. El robot físico se moverá siguiendo la trayectoria simulada, mientras la simulación en RoboDK refleja el movimiento real del robot. Es crucial supervisar este proceso con el pulsador de emergencia ("E-Stop") a mano.
 
-    # **Referencias**
-    * García Carrero, J. (2017). Planeación de trayectorias en vuelo de un manipulador industrial para el Laboratorio Fábrica Experimental UN.
-    * ABB (2003), *IRB 140 Industrial Robot - Datasheet*. ABB Robotics
+
+ ![Cardioide](img/Rosa.jpg)
+ 
+![RosaDoble](img/Cardioide.jpg)
+
+
+### 8. Videos.
+
+Se adjuntan los videos correspondientes a cada una de las trayectorias desarrolladas. En cada video se puede observar de forma comparativa el movimiento simulado en RoboDK y la ejecución real del robot físico Motoman MH6.
+
+
+# **Referencias**
+
+* García Carrero, J. (2017). Planeación de trayectorias en vuelo de un manipulador industrial para el Laboratorio Fábrica Experimental UN.
+* ABB (2003), *IRB 140 Industrial Robot - Datasheet*. ABB Robotics
