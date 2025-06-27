@@ -347,6 +347,9 @@ El contorno del círculo delimitador se dibuja con `MoveL`, al igual que todos l
 
     4.  **Monitoreo:** RoboDK enviará los puntos de la trayectoria uno por uno al controlador del robot. El robot físico se moverá siguiendo la trayectoria simulada, mientras la simulación en RoboDK refleja el movimiento real del robot. Es crucial supervisar este proceso con el pulsador de emergencia ("E-Stop") a mano.
 
+> [!IMPORTANT]
+> El comando `MoveC` **no funciona en modo streaming** (tiempo real) con el robot Motoman MH6 debido a las **limitaciones del driver de RoboDK**.  
+> Para que los movimientos circulares se ejecuten correctamente, se debe **generar un programa `.JBI` offline** y cargarlo directamente al controlador del robot.
 
  ![Cardioide](img/Rosa.jpg)
  
@@ -366,9 +369,7 @@ Se adjuntan los archivos .rdk correspondientes a cada una de las trayectorias de
 
 Se adjuntan los videos correspondientes a cada una de las trayectorias desarrolladas. En cada video se puede observar de forma comparativa el movimiento simulado en RoboDK y la ejecución real del robot físico Motoman MH6.
 
-> [!IMPORTANT]
-> El comando `MoveC` **no funciona en modo streaming** (tiempo real) con el robot Motoman MH6 debido a las **limitaciones del driver de RoboDK**.  
-> Para que los movimientos circulares se ejecuten correctamente, se debe **generar un programa `.JBI` offline** y cargarlo directamente al controlador del robot.
+
 
 
 #### Rosa dentro de otra rosa.
