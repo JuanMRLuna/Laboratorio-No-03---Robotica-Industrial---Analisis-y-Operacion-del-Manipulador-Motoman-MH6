@@ -323,7 +323,7 @@ La primera trayectoria consiste en una rosa polar contenida dentro de otra rosa 
 
   *  *Segunda trayectoria*:
  
-      Este script genera un patrón de **cardioides concéntricas** dentro de un círculo delimitador, seguido por el dibujo de las letras **J**, **M** y **D**.
+      Este script genera un patrón de **cardioides ** dentro de un círculo delimitador, seguido por el dibujo de las letras **J**, **M** y **D**.
   
     Cada cardioide se basa en la ecuación polar:
 
