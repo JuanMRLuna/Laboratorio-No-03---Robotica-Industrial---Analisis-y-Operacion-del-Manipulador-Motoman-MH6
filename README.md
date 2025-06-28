@@ -292,8 +292,8 @@ RoboDK es una plataforma de simulación y programación offline para robots indu
 | **Uso Específico** | Ideal para integradores que trabajan con múltiples marcas de robots, educación, y aplicaciones rápidas de OLP. | Indispensable para desarrollar y depurar programas complejos para robots ABB, aprovechando todas sus capacidades específicas. |
 
 * **¿Qué significa cada herramienta para usted? (Interpretación)**
-    * **RoboDK:** Es una "navaja suiza" de la robótica. Su gran valor reside en la versatilidad y la interoperabilidad. Es la herramienta perfecta para un entorno donde coexisten diferentes tecnologías o para estandarizar la programación offline sin depender de un solo fabricante. Es sinónimo de flexibilidad y accesibilidad.
-    * **RobotStudio:** Es el "entorno de desarrollo nativo" de ABB. Ofrece una simulación de máxima fidelidad (un verdadero gemelo digital) del robot y su controlador. Es la herramienta definitiva para sacar el máximo provecho a un robot ABB, permitiendo una programación detallada y una depuración precisa que garantiza que lo que se ve en la simulación es exactamente lo que ocurrirá en la realidad. Es sinónimo de precisión y especialización.
+    * **RoboDK:**  Su gran valor reside en la versatilidad y la interoperabilidad. Es la herramienta perfecta para un entorno donde coexisten diferentes tecnologías o para estandarizar la programación offline sin depender de un solo fabricante. Es sinónimo de flexibilidad y accesibilidad.
+    * **RobotStudio:** Ofrece una simulación de máxima fidelidad (un verdadero gemelo digital) del robot y su controlador. Epermite  sacar el máximo provecho a un robot ABB, permitiendo una programación detallada y una depuración precisa que garantiza que lo que se ve en la simulación es exactamente lo que ocurrirá en la realidad.
 
 ### **7. Programación de Trayectoria Polar en RoboDK**
 
